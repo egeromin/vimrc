@@ -33,6 +33,9 @@ au BufNewFile,BufRead *.py
     \  fileformat=unix
 
 
+
+
+
 " plugins"
 call plug#begin('~/.vim/plugged')
 
@@ -41,6 +44,9 @@ Plug 'JuliaEditorSupport/julia-vim'
 Plug 'lervag/vimtex'
 Plug 'scrooloose/nerdtree'
 Plug 'davidhalter/jedi-vim'
+Plug 'rust-lang/rust.vim'
+Plug 'tpope/vim-surround'
+Plug 'pangloss/vim-javascript'
 
 call plug#end()
 
@@ -57,3 +63,5 @@ set tabstop=4
 \  fileformat=unix
 
 nmap <silent> <C-g> :NERDTreeToggle<CR>
+
+au BufNewFile,BufRead *.gs set filetype=javascript
