@@ -65,3 +65,5 @@ set tabstop=4
 nmap <silent> <C-g> :NERDTreeToggle<CR>
 
 au BufNewFile,BufRead *.gs set filetype=javascript
+
+set clipboard=unnamedplus
